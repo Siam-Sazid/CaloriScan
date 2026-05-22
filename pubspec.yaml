@@ -1,0 +1,49 @@
+name: detecd_food_calory
+description: "AI-driven food calorie detection app using Claude Vision."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_bloc: ^8.1.6
+
+  # Dependency injection
+  get_it: ^7.7.0
+
+  # Functional programming (Either type)
+  dartz: ^0.10.1
+
+  # Value equality
+  equatable: ^2.0.5
+
+  # Image capture & selection
+  image_picker: ^1.1.2
+
+  # Local persistence
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Utilities
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  http: ^1.2.2
+
+  # UI components
+  percent_indicator: ^4.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
