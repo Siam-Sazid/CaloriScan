@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(start ms-settings:developers)",
-      "Skill(claude-api)"
-    ]
-  }
-}
