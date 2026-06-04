@@ -1,4 +1,5 @@
-# Project context file — internal notes, not for version control
+# Claude Code internal files — not for version control
+.claude/
 CLAUDE.md
 
 # Miscellaneous

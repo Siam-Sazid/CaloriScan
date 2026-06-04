@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
+import '../errors/exceptions.dart';
 
 class ImageCompressor {
   static const int _maxBytes = 4 * 1024 * 1024; // 4MB Claude API limit
@@ -8,7 +9,9 @@ class ImageCompressor {
   static Future<String> toBase64(File imageFile) async {
     final Uint8List bytes = await imageFile.readAsBytes();
     if (bytes.lengthInBytes > _maxBytes) {
-      throw Exception('Image too large. Please use a smaller image.');
+      throw const ImageProcessingException(
+        message: 'Image too large (max 4 MB). Please use a smaller image.',
+      );
     }
     return base64Encode(bytes);
   }

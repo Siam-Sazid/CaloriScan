@@ -53,7 +53,7 @@ Future<void> initDependencies() async {
   // once the Anthropic API key is available.
   // -----------------------------------------------------------
   sl.registerLazySingleton<ClaudeAiDataSource>(
-    () => ClaudeAiDataSourceStub(),
+    () => ClaudeAiDataSourceImpl(),
   );
 
   sl.registerLazySingleton<MealLocalDataSource>(

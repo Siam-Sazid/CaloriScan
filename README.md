@@ -25,3 +25,5 @@ CaloriScan is a personal Flutter app that uses AI to detect food items from phot
 This is a personal project built to explore AI-driven image recognition in mobile apps. Food detection and nutrition analysis are powered by the **Claude Vision API** by Anthropic, which analyzes meal photos and returns structured nutrition data without needing a separate food database.
 
 > Built with Claude API for image detection.
+
+
